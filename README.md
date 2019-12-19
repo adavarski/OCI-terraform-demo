@@ -1,4 +1,6 @@
-1.Install oci-cli and terraform 
+### OCI-terraform-demo
+
+#### 1.Install oci-cli and terraform 
 ```
 $ bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
 $/Users/davar/bin/oci setup keys
@@ -24,7 +26,7 @@ $ curl https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_darwin
 $ unzip terraform_0.12.18_darwin_amd64.zip
 $ cp ./terraform /usr/local/bin
 ```
-2.Create env-vars file
+#### 2.Create env-vars file
 ```
 $ cat env-vars
 export TF_VAR_tenancy_ocid=
@@ -40,14 +42,14 @@ export TF_VAR_ssh_private_key=$(cat ~/.ssh/id_rsa)
 export TF_VAR_region=
 ```
 
-3.Create OCI infrastructure
+#### 3.Create OCI infrastructure
 ```
 $ source env-vars
 $ terraform init
 $ terraform plan
 $ terraform apply
 ```
-4.Clean OCI infrastructure
+#### 4.Clean OCI infrastructure
 ```
 $ terraform destroy
 ```
