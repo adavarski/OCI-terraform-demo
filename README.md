@@ -19,7 +19,7 @@ key_file=~/.oci/oci_api_key.pem
 tenancy=
 region=
 $ /Users/davar/bin/oci setup repair-file-permissions --file /Users/davar/.oci/config
-$  /Users/davar/bin/oci iam region list --output table
+$ /Users/davar/bin/oci iam region list --output table
 $ /Users/davar/bin/oci iam availability-domain list --output table --profile DEFAULT
 $ /Users/davar/bin/oci compute image list -c ocid1.tenancy.oc1XXXXXXXXXX --output table --query "data [*].{ImageName:\"display-name\", OCID:id}"|grep CentOS
 $ curl https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_darwin_amd64.zip --output terraform_0.12.18_darwin_amd64.zip
