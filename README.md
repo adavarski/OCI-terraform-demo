@@ -215,7 +215,7 @@ root     10218 10180  0 08:29 pts/0    00:00:00 ps -ef
 
 
 ```
-#### 4.Clean OCI infrastructure
+#### 5.Clean OCI infrastructure
 ```
 $ terraform destroy
 ```
